@@ -4,9 +4,10 @@
     "description": "A web app that tries to look like the mesa21.com site",
     "main": "main.js",
     "scripts": {
-        "dev-server": "webpack-dev-server --mode development",
-        "develop": "webpack --mode development --watch",
-        "build": "webpack --mode production"
+        "dev-server": "webpack-dev-server --config ./webpack-dev.config.js --open",
+        "prod-build": "webpack --config ./webpack-prod.config.js",
+        "predeploy": "npm run prod-build",
+        "deploy": "gh-pages -d dist/"
     },
     "repository": {
         "type": "git",
@@ -23,7 +24,7 @@
     "bugs": {
         "url": "https://github.com/Gikoskos/Mesa21-Clone/issues"
     },
-    "homepage": "https://github.com/Gikoskos/Mesa21-Clone#readme",
+    "homepage": "https://Gikoskos.github.io/Mesa21-Clone/",
     "devDependencies": {
         "babel-cli": "^6.26.0",
         "babel-core": "^6.26.3",
@@ -48,6 +49,7 @@
         "webpack-dev-server": "^3.1.5"
     },
     "dependencies": {
+        "gh-pages": "^1.2.0",
         "react-hot-loader": "^4.3.4"
     }
 }

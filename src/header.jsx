@@ -72,7 +72,7 @@ export default class SiteHeader extends React.Component {
 
                 <span className="col menu-logo">
                     <Link className="menu-option-link" to="/">
-                        <img src="assets/main_logo.png"
+                        <img src={require("./assets/main_logo.png")}
                              width="150"
                              height="150"
                              alt="Mesa21 logo"/>

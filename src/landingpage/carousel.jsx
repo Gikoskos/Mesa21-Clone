@@ -2,11 +2,16 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Slider from "react-slick";
 
+import img1 from "../assets/carousel/1.jpg";
+import img2 from "../assets/carousel/2.jpg";
+import img3 from "../assets/carousel/3.jpg";
+import img4 from "../assets/carousel/4.jpg";
+import img5 from "../assets/carousel/5.jpg";
+import img6 from "../assets/carousel/6.jpg";
+//const img_path = "assets/carousel/#.jpg";
 
-const img_path = "assets/carousel/#.jpg";
 
-
-const SocialMediaButton = (props) => {
+const CarouselImage = (props) => {
     return (
         <div>
             <img src={props.srcPath} width="313" height="235"/>
@@ -18,13 +23,13 @@ export default class IndexCarousel extends React.Component {
     constructor(props) {
         super(props);
 
-        this.carouselImgs = [];
+        /*this.carouselImgs = [];
 
         for (let i = 1; i <= 6; i++) {
             this.carouselImgs.push(
                 <SocialMediaButton key={i} srcPath={img_path.replace('#', i.toString())} />
             );
-        }
+        }*/
     }
 
     render() {
@@ -46,7 +51,12 @@ export default class IndexCarousel extends React.Component {
             <div className="row" id="mesa21-carousel">
                 <div className="container">
                     <Slider {...settings}>
-                        {this.carouselImgs}
+                        <CarouselImage srcPath={img1}/>
+                        <CarouselImage srcPath={img2}/>
+                        <CarouselImage srcPath={img3}/>
+                        <CarouselImage srcPath={img4}/>
+                        <CarouselImage srcPath={img5}/>
+                        <CarouselImage srcPath={img6}/>
                     </Slider>
                 </div>
             </div>

@@ -18,23 +18,23 @@ function App(props) {
             <div>
                 <SiteHeader />
                 <Switch>
-                    <Route exact path="/" component={IndexPage}/>
-                    <Route exact path="/OurStory" component={NotImplementedPage}/>
-                    <Route exact path="/MenuComingSoon" component={NotImplementedPage}/>
-                    <Route exact path="/HappyHourFullServiceConcept" component={NotImplementedPage}/>
-                    <Route exact path="/ClermontLocation" component={NotImplementedPage}/>
-                    <Route exact path="/LakeIvanhoeLocation" component={NotImplementedPage}/>
-                    <Route exact path="/ContactUs" component={NotImplementedPage}/>
-                    <Route exact path="/Videos" component={NotImplementedPage}/>
-                    <Route exact path="/Photos" component={NotImplementedPage}/>
-                    <Route exact path="/CateringCS" component={NotImplementedPage}/>
-                    <Route exact path="/Directions" component={NotImplementedPage}/>
-                    <Route exact path="/Careers" component={NotImplementedPage}/>
-                    <Route exact path="/EmailJoin" component={NotImplementedPage}/>
-                    <Route exact path="/Login" component={NotImplementedPage}/>
-                    <Route exact path="/Reviews" component={NotImplementedPage}/>
-                    <Route exact path="/LP" component={NotImplementedPage}/>
-                    <Route exact path="/LoyaltyProgram" component={NotImplementedPage}/>
+                    <Route path="/" component={IndexPage}/>
+                    <Route path="/OurStory" component={NotImplementedPage}/>
+                    <Route path="/MenuComingSoon" component={NotImplementedPage}/>
+                    <Route path="/HappyHourFullServiceConcept" component={NotImplementedPage}/>
+                    <Route path="/ClermontLocation" component={NotImplementedPage}/>
+                    <Route path="/LakeIvanhoeLocation" component={NotImplementedPage}/>
+                    <Route path="/ContactUs" component={NotImplementedPage}/>
+                    <Route path="/Videos" component={NotImplementedPage}/>
+                    <Route path="/Photos" component={NotImplementedPage}/>
+                    <Route path="/CateringCS" component={NotImplementedPage}/>
+                    <Route path="/Directions" component={NotImplementedPage}/>
+                    <Route path="/Careers" component={NotImplementedPage}/>
+                    <Route path="/EmailJoin" component={NotImplementedPage}/>
+                    <Route path="/Login" component={NotImplementedPage}/>
+                    <Route path="/Reviews" component={NotImplementedPage}/>
+                    <Route path="/LP" component={NotImplementedPage}/>
+                    <Route path="/LoyaltyProgram" component={NotImplementedPage}/>
                     <Route component={NotFoundPage}/>
                 </Switch>
                 <SiteFooter />

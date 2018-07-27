@@ -2,7 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Link } from "react-router-dom";
 
-import ScrollAnimation from 'react-animate-on-scroll';
+import ScrollAnimation from "react-animate-on-scroll";
+
+import fb_icon from "../assets/bxl-facebook.svg";
+import yt_icon from "../assets/bxl-youtube.svg";
+import ig_icon from "../assets/bxl-instagram.svg";
 
 
 const SocialMediaButton = (props) => {
@@ -30,14 +34,23 @@ export default class IndexMain extends React.Component {
                         <ScrollAnimation animateIn="fadeInUp" initiallyVisible={false} animateOnce={true}>
                             <Link className="row read-more-link" to="/OurStory">- READ MORE -</Link>
                             <div className="btn-group social-media-links">
-                                <SocialMediaButton imgSrc="assets/bxl-facebook.svg" mediaLink="https://www.facebook.com/mesa21realmexican/"/>
-                                <SocialMediaButton imgSrc="assets/bxl-youtube.svg" mediaLink="https://www.youtube.com/channel/UC1vsGgYd-KIl6aus5K1U3ug/videos?sort=dd&shelf_id=0&view=0"/>
-                                <SocialMediaButton imgSrc="assets/bxl-instagram.svg" mediaLink="https://www.instagram.com/mesa21realmexican/"/>                            
+                                <SocialMediaButton
+                                    imgSrc={fb_icon}
+                                    mediaLink="https://www.facebook.com/mesa21realmexican/"
+                                />
+                                <SocialMediaButton
+                                    imgSrc={yt_icon}
+                                    mediaLink="https://www.youtube.com/channel/UC1vsGgYd-KIl6aus5K1U3ug/videos?sort=dd&shelf_id=0&view=0"
+                                />
+                                <SocialMediaButton
+                                    imgSrc={ig_icon}
+                                    mediaLink="https://www.instagram.com/mesa21realmexican/"
+                                />
                             </div>
                         </ScrollAnimation>
                     </div>
                     <div className="col">
-                        <img className="img-fluid" src="assets/main_image.jpg"/>
+                        <img className="img-fluid" src={require("../assets/main_image.jpg")}/>
                     </div>
                 </div>
             </div>
