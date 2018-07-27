@@ -10,6 +10,7 @@
 /build
 *.css
 *.map
+*.js
 
 # misc
 .DS_Store
