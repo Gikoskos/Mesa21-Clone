@@ -15,6 +15,7 @@ export default class IndexPage extends React.Component {
     render() {
         return (
             <React.Fragment>
+                <IndexVideo />
                 <IndexMain />
                 <IndexJoin />
                 <IndexCarousel />
