@@ -1,0 +1,56 @@
+{
+    "name": "mesa21-clone",
+    "version": "1.0.0",
+    "description": "A web app that tries to look like the mesa21.com site",
+    "main": "main.js",
+    "scripts": {
+        "dev-server": "webpack-dev-server --mode development",
+        "develop": "webpack --mode development --watch",
+        "build": "webpack --mode production"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Gikoskos/Mesa21-Clone.git"
+    },
+    "keywords": [
+        "reactjs",
+        "bootstrap4",
+        "html5",
+        "scss"
+    ],
+    "author": "George Koskeridis",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Gikoskos/Mesa21-Clone/issues"
+    },
+    "homepage": "https://github.com/Gikoskos/Mesa21-Clone#readme",
+    "devDependencies": {
+        "autoprefixer": "^9.0.1",
+        "babel-cli": "^6.26.0",
+        "babel-core": "^6.26.3",
+        "babel-loader": "^7.1.5",
+        "babel-minify-webpack-plugin": "^0.3.1",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-react": "^6.24.1",
+        "cross-env": "^5.2.0",
+        "css-hot-loader": "^1.4.0",
+        "css-loader": "^1.0.0",
+        "file-loader": "^1.1.11",
+        "node-sass": "^4.9.2",
+        "popper.js": "^1.14.3",
+        "react": "^16.4.1",
+        "react-animate-on-scroll": "^2.1.5",
+        "react-dom": "^16.4.1",
+        "react-router": "^4.3.1",
+        "react-router-dom": "^4.3.1",
+        "react-slick": "^0.23.1",
+        "sass-loader": "^7.0.3",
+        "style-loader": "^0.21.0",
+        "webpack": "^4.16.2",
+        "webpack-cli": "^3.1.0",
+        "webpack-dev-server": "^3.1.5"
+    },
+    "dependencies": {
+        "react-hot-loader": "^4.3.3"
+    }
+}
