@@ -11,6 +11,8 @@ import NotFoundPage from "./notfound";
 import NotImplementedPage from "./notimplemented";
 import IndexPage from "./landingpage/index";
 
+import buildURL from "./paths";
+
 
 function App(props) {
     return (
@@ -18,23 +20,23 @@ function App(props) {
             <div>
                 <SiteHeader />
                 <Switch>
-                    <Route path="/" component={IndexPage}/>
-                    <Route path="/OurStory" component={NotImplementedPage}/>
-                    <Route path="/MenuComingSoon" component={NotImplementedPage}/>
-                    <Route path="/HappyHourFullServiceConcept" component={NotImplementedPage}/>
-                    <Route path="/ClermontLocation" component={NotImplementedPage}/>
-                    <Route path="/LakeIvanhoeLocation" component={NotImplementedPage}/>
-                    <Route path="/ContactUs" component={NotImplementedPage}/>
-                    <Route path="/Videos" component={NotImplementedPage}/>
-                    <Route path="/Photos" component={NotImplementedPage}/>
-                    <Route path="/CateringCS" component={NotImplementedPage}/>
-                    <Route path="/Directions" component={NotImplementedPage}/>
-                    <Route path="/Careers" component={NotImplementedPage}/>
-                    <Route path="/EmailJoin" component={NotImplementedPage}/>
-                    <Route path="/Login" component={NotImplementedPage}/>
-                    <Route path="/Reviews" component={NotImplementedPage}/>
-                    <Route path="/LP" component={NotImplementedPage}/>
-                    <Route path="/LoyaltyProgram" component={NotImplementedPage}/>
+                    <Route path={buildURL("/")} component={IndexPage}/>
+                    <Route path={buildURL("OurStory")} component={NotImplementedPage}/>
+                    <Route path={buildURL("MenuComingSoon")} component={NotImplementedPage}/>
+                    <Route path={buildURL("HappyHourFullServiceConcept")} component={NotImplementedPage}/>
+                    <Route path={buildURL("ClermontLocation")} component={NotImplementedPage}/>
+                    <Route path={buildURL("LakeIvanhoeLocation")} component={NotImplementedPage}/>
+                    <Route path={buildURL("ContactUs")} component={NotImplementedPage}/>
+                    <Route path={buildURL("Videos")} component={NotImplementedPage}/>
+                    <Route path={buildURL("Photos")} component={NotImplementedPage}/>
+                    <Route path={buildURL("CateringCS")} component={NotImplementedPage}/>
+                    <Route path={buildURL("Directions")} component={NotImplementedPage}/>
+                    <Route path={buildURL("Careers")} component={NotImplementedPage}/>
+                    <Route path={buildURL("EmailJoin")} component={NotImplementedPage}/>
+                    <Route path={buildURL("Login")} component={NotImplementedPage}/>
+                    <Route path={buildURL("Reviews")} component={NotImplementedPage}/>
+                    <Route path={buildURL("LP")} component={NotImplementedPage}/>
+                    <Route path={buildURL("LoyaltyProgram")} component={NotImplementedPage}/>
                     <Route component={NotFoundPage}/>
                 </Switch>
                 <SiteFooter />

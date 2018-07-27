@@ -2,12 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Link } from "react-router-dom";
 
+import buildURL from "./paths";
+
 import fb_icon from "./assets/bxl-facebook.svg";
 import yt_icon from "./assets/bxl-youtube.svg";
 import ig_icon from "./assets/bxl-instagram.svg";
 
+
 const SitemapLink = (props) => {
-    let to_link = `/${props.urlPath}`;
+    let to_link = buildURL(props.urlPath);
 
     return (
         <p>

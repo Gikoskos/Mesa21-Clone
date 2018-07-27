@@ -2,9 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Link } from "react-router-dom";
 
+import buildURL from "./paths";
+
 
 const MenuOptionItem = (props) => {
-    let to_link = `/${props.urlPath}`;
+    let to_link = buildURL(props.urlPath);
 
     return (
         <span className="col menu-option">
@@ -14,7 +16,7 @@ const MenuOptionItem = (props) => {
 };
 
 const MenuOptionListItem = (props) => {
-    let to_link = `/${props.urlPath}`;
+    let to_link = buildURL(props.urlPath);
 
     return (
         <li>
