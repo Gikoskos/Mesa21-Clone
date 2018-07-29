@@ -9,7 +9,9 @@ const YellowButton = function (props) {
     return (
         <ScrollAnimation animateIn="fadeInUp" initiallyVisible={false} animateOnce={true}>
             <div>
-                <a className="join-now-link" href={props.urlPath}>{props.displayText}</a>
+                <a className="join-now-link" href={props.urlPath}>
+                    <span className="orange-button-text">{props.displayText}</span>
+                </a>
             </div>
         </ScrollAnimation>
     );
@@ -43,12 +45,12 @@ export default class IndexJoin extends React.Component {
                                 <div className="col">
                                     <h2>Join Our Mailing List</h2>
                                     <p>For updates on specials and live music events!</p>
-                                    <YellowButton displayText="- JOIN NOW -" urlPath="#" />
+                                    <YellowButton displayText="JOIN NOW" urlPath="#" />
                                 </div>
                                 <div className="col">
                                     <h2>Join Our Loyalty Program</h2>
                                     <p>For exclusive deals!</p>
-                                    <YellowButton displayText="- JOIN NOW -" urlPath="#" />
+                                    <YellowButton displayText="JOIN NOW" urlPath="#" />
                                 </div>
                             </div>
                         </div>

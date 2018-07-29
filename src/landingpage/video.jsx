@@ -31,7 +31,8 @@ export default class IndexVideo extends React.Component {
             controls: '0',
             showinfo: '0',
             autoplay: '1',
-            loop: '1'
+            loop: '1',
+            mute: '1'
         });
     }
 

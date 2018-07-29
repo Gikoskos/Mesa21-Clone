@@ -10,6 +10,8 @@ import IndexMap from "./map";
 export default class IndexPage extends React.Component {
     constructor(props) {
         super(props);
+
+        document.title = "Mesa21 - Main";
     }
 
     render() {

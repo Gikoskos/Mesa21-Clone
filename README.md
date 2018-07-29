@@ -54,6 +54,8 @@ If there were no issues, the app will run at
 
 (doesn't include their respective dependencies)
 
+I treid 
+
 ### License
 
 All assets with `svg` extension in the folder `dist/assets` are from [BoxIcons](https://boxicons.com/).

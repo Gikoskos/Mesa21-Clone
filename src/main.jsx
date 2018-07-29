@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import {hot} from "react-hot-loader";
 
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+//import createHistory from "history/createBrowserHistory";
 
 import SiteHeader from "./header";
 import SiteFooter from "./footer";
@@ -10,6 +11,7 @@ import SiteFooter from "./footer";
 import NotFoundPage from "./notfound";
 import NotImplementedPage from "./notimplemented";
 import IndexPage from "./landingpage/index";
+import OurStory from "./ourstory/index";
 
 import buildURL from "./paths";
 
@@ -21,7 +23,7 @@ function App(props) {
                 <SiteHeader />
                 <Switch>
                     <Route path={buildURL("/")} component={IndexPage}/>
-                    <Route path={buildURL("OurStory")} component={NotImplementedPage}/>
+                    <Route path={buildURL("OurStory")} component={OurStory}/>
                     <Route path={buildURL("MenuComingSoon")} component={NotImplementedPage}/>
                     <Route path={buildURL("HappyHourFullServiceConcept")} component={NotImplementedPage}/>
                     <Route path={buildURL("ClermontLocation")} component={NotImplementedPage}/>
