@@ -1,7 +1,7 @@
 # Mesa21-Clone
 ## Overview
 
-A single page [React](https://reactjs.org) app that tries to simulate the look and feel of the [mesa21.com](https://www.mesa21.com/) website.
+A single page [React](https://reactjs.org) app that tries to simulate the look and feel of the [mesa21.com](https://www.mesa21.com/) website (at least the version of the website at that time).
 
 This project's goal isn't to make a pixel perfect copy, but to build a single-page app from scratch that operates in similar fashion to the original. It doesn't make use of any of the original's code.
 
